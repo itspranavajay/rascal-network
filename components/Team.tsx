@@ -22,6 +22,8 @@ const teamMembers = [
   { name: "N A R U T O", role: "Admin", icon: Users, color: "text-green-400", username: "Naruto_style" },
   { name: "Mᴇᴀɴɪɴɢʟᴇss", role: "Admin", icon: Users, color: "text-green-400", username: "The_Gerault" },
   { name: "V I S H U", role: "Admin", icon: Users, color: "text-green-400", username: "JUSTVISU" },
+  { name: "S H E N A R C", role: "Expert", icon: Zap, color: "text-blue-400", username: "Shenarc" },
+  { name: "P R A N A V  A J A Y", role: "Developer", icon: Users, color: "text-green-400", username: "mno_ai" },
 ]
 
 const Team = () => {
