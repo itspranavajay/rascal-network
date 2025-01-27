@@ -4,24 +4,24 @@ import { motion } from "framer-motion"
 import { Crown, Shield, Star, Zap, Users } from "lucide-react"
 
 const teamMembers = [
-  { name: "M I K E Y", role: "Founder", icon: Crown, color: "text-yellow-400" },
-  { name: "E R E N", role: "Co-Founder", icon: Shield, color: "text-purple-400" },
-  { name: "J A C K", role: "Co-Founder", icon: Shield, color: "text-purple-400" },
-  { name: "O R E K I", role: "Co-Founder", icon: Shield, color: "text-purple-400" },
-  { name: "H A R S H U", role: "President", icon: Star, color: "text-pink-400" },
-  { name: "Y H W A C H", role: "President", icon: Star, color: "text-pink-400" },
-  { name: "Nᴀᴍᴇʟᴇss", role: "President", icon: Star, color: "text-pink-400" },
-  { name: "A Y A N", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "𝗥 𝚵 𝗫 𝗫", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "R E N G O K U", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "X", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "L O K I", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "D O P E", role: "Expert", icon: Zap, color: "text-blue-400" },
-  { name: "A L E X", role: "Admin", icon: Users, color: "text-green-400" },
-  { name: "J O H A N", role: "Admin", icon: Users, color: "text-green-400" },
-  { name: "N A R U T O", role: "Admin", icon: Users, color: "text-green-400" },
-  { name: "Mᴇᴀɴɪɴɢʟᴇss", role: "Admin", icon: Users, color: "text-green-400" },
-  { name: "V I S H U", role: "Admin", icon: Users, color: "text-green-400" },
+  { name: "M I K E Y", role: "Founder", icon: Crown, color: "text-yellow-400", username: "Mikey_Rascals" },
+  { name: "E R E N", role: "Co-Founder", icon: Shield, color: "text-purple-400", username: "Afk_x_eren" },
+  { name: "J A C K", role: "Co-Founder", icon: Shield, color: "text-purple-400", username: "Jackiie_jack" },
+  { name: "O R E K I", role: "Co-Founder", icon: Shield, color: "text-purple-400", username: "TOMO_XD" },
+  { name: "H A R S H U", role: "President", icon: Star, color: "text-pink-400", username: "Harshu_Raven" },
+  { name: "Y H W A C H", role: "President", icon: Star, color: "text-pink-400", username: "Yhwach_the_almightyy" },
+  { name: "Nᴀᴍᴇʟᴇss", role: "President", icon: Star, color: "text-pink-400", username: "Fucking_Rascal" },
+  { name: "A Y A N", role: "Expert", icon: Zap, color: "text-blue-400", username: "myself_ayan_143" },
+  { name: "𝗥 𝚵 𝗫 𝗫", role: "Expert", icon: Zap, color: "text-blue-400", username: "Dark_Dise" },
+  { name: "R E N G O K U", role: "Expert", icon: Zap, color: "text-blue-400", username: "Rengoku_rascal" },
+  { name: "X", role: "Expert", icon: Zap, color: "text-blue-400", username: "Neccan_n" },
+  { name: "L O K I", role: "Expert", icon: Zap, color: "text-blue-400", username: "xdloki" },
+  { name: "D O P E", role: "Expert", icon: Zap, color: "text-blue-400", username: "stancovicj" },
+  { name: "A L E X", role: "Admin", icon: Users, color: "text-green-400", username: "AloneBoy1209" },
+  { name: "J O H A N", role: "Admin", icon: Users, color: "text-green-400", username: "Johan_liebert_19" },
+  { name: "N A R U T O", role: "Admin", icon: Users, color: "text-green-400", username: "Naruto_style" },
+  { name: "Mᴇᴀɴɪɴɢʟᴇss", role: "Admin", icon: Users, color: "text-green-400", username: "The_Gerault" },
+  { name: "V I S H U", role: "Admin", icon: Users, color: "text-green-400", username: "JUSTVISU" },
 ]
 
 const Team = () => {
@@ -57,10 +57,12 @@ const Team = () => {
                   <div className={`text-4xl mb-4 ${member.color}`}>
                     <member.icon className="w-8 h-8" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-purple-300">{member.name}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-purple-300">
+                    {member.name} <span className="text-sm">⌯ ❰𝗥𝚫𝗦𝗖𝚫𝗟❱</span>
+                  </h3>
                   <p className="text-gray-400 mb-4">{member.role}</p>
                   <motion.a
-                    href={`https://t.me/${member.name.replace(/\s/g, "")}`}
+                    href={`https://t.me/${member.username}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm hover:bg-purple-600/30 transition duration-300"
